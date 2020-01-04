@@ -1,0 +1,75 @@
+{
+  "posts": [
+    {
+      "content": "  需求缘起：在研究Spring Boot性能优化的时候，碰到了一个高性能Web服务器，本着学习了解的态度，和大家一起学习研究下，有何想法皆可在文章中下面进行评论探讨。\r\n  \r\n<!-- more -->\r\n\r\n（1）Undertow介绍；\r\n（2）Undertow几个特点；\r\n（3）相关链接及快速示例；\r\n（4）Spring Boot中使用Undertow；\r\n（5）Undertow之配置信息；\r\n\r\n\r\n（1）Undertow介绍；\r\nUndertow 是一个采用 Java 开发的灵活的高性能 Web 服务器，提供包括阻塞和基于 NIO 的非堵塞机制。Undertow 是红帽公司的开源产品，是 Wildfly 默认的 Web 服务器。\r\n\r\nUndertow 提供一个基础的架构用来构建 Web 服务器，这是一个完全为嵌入式设计的项目，提供易用的构建器 API，完全兼容 Java EE Servlet 3.1 和低级非堵塞的处理器。\r\n\r\n \r\n\r\n（2）Undertow几个特点；\r\n\r\n（a）轻量化 - Undertow 是一个Web 服务器，但它不像传统的Web 服务器有容器的概念，它由两个核心jar包组成，使用API加载一个Web应用可以使用小于10MB的内存。\r\n\r\n（b）HTTP Upgrade 支持 - 设计WildFly时一个重要的考虑因素是在云环境中减少端口数量的需求。在云环境中，一个系统可能运行了几百个甚至几千个WildFly实例。基于HTTP使用HTTP Upgrade可以升级成多种协议，Undertow提供了复用这些协议的能力。\r\n\r\n（c）Web Socket 支持 - 对Web Socket的完全支持，用以满足Web应用现在面对巨大数量的客户端，以及对JSR-356规范的支持。\r\n\r\n（d）Servlet 3.1 的支持 - Undertow支持Servlet 3.1，提供了一个机会来构建一个超越Servlet规范、对开发人员非常友好的系统。\r\n\r\n（e）可嵌套性 - Web 服务器不在需要容器，我们只需要通过API在J2SE代码下快速搭建Web服务。\r\n\r\n \r\n\r\n（3）相关链接及快速示例；\r\n\r\nUndertow 社区主页（http://undertow.io/）：包括Undertow相关的所有新闻，消息。\r\n\r\nUndertow 源代码（https://github.com/undertow-io/）：包括所有Undertow相关的代码\r\n\r\n（4）Undertow之配置信息；\r\n\r\nSpring boot也为我们提供了Undertow常用的配置信息（在application.properties）:\r\n\r\nserver.undertow.accesslog.dir= # Undertow access log directory.\r\nserver.undertow.accesslog.enabled=false # Enable access log.\r\nserver.undertow.accesslog.pattern=common # Format pattern for access logs.\r\nserver.undertow.accesslog.prefix=access_log. # Log file name prefix.\r\nserver.undertow.accesslog.rotate=true # Enable access log rotation.\r\nserver.undertow.accesslog.suffix=log # Log file name suffix.\r\nserver.undertow.buffer-size= # Size of each buffer in bytes.\r\nserver.undertow.buffers-per-region= # Number of buffer per region.\r\nserver.undertow.direct-buffers= # Allocate buffers outside the Java heap.\r\nserver.undertow.io-threads= # Number of I/O threads to create for the worker.\r\nserver.undertow.max-http-post-size=0 # Maximum size in bytes of the HTTP post content.\r\nserver.undertow.worker-threads= # Number of worker threads.",
+      "data": {
+        "title": " 【Spring Boot Undertow学习】Undertow介绍",
+        "date": "2020-01-04 17:53:32",
+        "tags": [
+          "技术"
+        ],
+        "published": true,
+        "hideInList": false,
+        "feature": null,
+        "isTop": false
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "  需求缘起：在研究Spring Boot性能优化的时候，碰到了一个高性能Web服务器，本着学习了解的态度，和大家一起学习研究下，有何想法皆可在文章中下面进行评论探讨。\r",
+      "fileName": "spring-boot-undertow-xue-xi-undertow-jie-shao"
+    },
+    {
+      "content": "\r\n![](http://106.13.178.111/post-images/1578126372782.jpg)\r\n瓜迪奥拉在接受采访时谈到了斯通斯，英格兰后卫在曼城连续三个赛季都遭遇过伤病侵袭，本赛季他只代表曼城出场了11次。\r\n\r\n<!-- more -->\r\n而关于斯通斯复出后能否达到水准，瓜迪奥拉说道：“他有条件这么做。但是，要成为最佳中卫，一赛季至少每三天要踢一场比赛。”\r\n\r\n“能否达到这点这取决于他自身，他必须有稳定的出场时间，过去三个半赛季里，他做不到这样。”\r\n\r\n“很难清楚原因，遭受重伤总是不幸的。就像这赛季的拉波尔特，就像刚到曼城时的京多安、门迪。伤病是有可能发生，斯通斯的情况我并不知晓原因。”\r\n\r\n“我不知道他为什么不能保持身体健康，不知道为什么我们不能让他保持身体健康。他是一位年轻球员，未来还要长期担任曼城的中卫。”",
+      "data": {
+        "title": "瓜迪奥拉：斯通斯还很年轻，他是曼城未来的长期计划",
+        "date": "2020-01-04 16:25:16",
+        "tags": [
+          "曼城新闻"
+        ],
+        "published": true,
+        "hideInList": false,
+        "feature": null,
+        "isTop": true
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "\r\n![](http://106.13.178.111/post-images/1578126372782.jpg)\r\n瓜迪奥拉在接受采访时谈到了斯通斯，英格兰后卫在曼城连续三个赛季都遭遇过伤病侵袭，本赛季他只代表曼城出场了11次。\r",
+      "fileName": "gua-di-ao-la-si-tong-si-huan-hen-nian-qing-ta-shi-man-cheng-wei-lai-de-chang-qi-ji-hua"
+    }
+  ],
+  "tags": [
+    {
+      "name": "技术",
+      "slug": "h6pTam66W",
+      "used": true
+    },
+    {
+      "index": -1,
+      "name": "曼城新闻",
+      "slug": "3D5WfiFJ4",
+      "used": true
+    }
+  ],
+  "menus": [
+    {
+      "link": "/",
+      "name": "首页",
+      "openType": "Internal"
+    },
+    {
+      "link": "/archives",
+      "name": "新闻",
+      "openType": "Internal"
+    },
+    {
+      "link": "http://106.13.178.111/post/spring-boot-undertow-xue-xi-undertow-jie-shao",
+      "name": "技术",
+      "openType": "Internal"
+    },
+    {
+      "link": "/tags",
+      "name": "标签",
+      "openType": "Internal"
+    }
+  ]
+}

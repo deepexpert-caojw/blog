@@ -1,0 +1,30 @@
+{
+  "config": {
+    "branch": "",
+    "domain": "http://106.13.178.111",
+    "email": "",
+    "password": "asdcjw110!",
+    "platform": "sftp",
+    "port": 22,
+    "remotePath": "/home/new",
+    "repository": "",
+    "server": "106.13.178.111",
+    "token": "",
+    "username": "root"
+  },
+  "comment": {
+    "commentPlatform": "gitalk",
+    "disqusSetting": {
+      "api": "",
+      "apikey": "",
+      "shortname": ""
+    },
+    "gitalkSetting": {
+      "clientId": "",
+      "clientSecret": "",
+      "owner": "",
+      "repository": ""
+    },
+    "showComment": false
+  }
+}
